@@ -37,10 +37,7 @@ const App = () => {
   const blogFormRef = useRef()
   const navigate = useNavigate()
 
-  useEffect
-  (() => {
-    dispatch(initializeBlogs())
-  }, [dispatch])
+  useEffect (() => {  dispatch(initializeBlogs())}, [dispatch])
 
   useEffect(() => {
     const loggedUserJSON = window.localStorage.getItem('loggedBlogappUser')
